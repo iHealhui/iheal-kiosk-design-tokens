@@ -93,5 +93,3 @@ styles/
 建議 tokens 有變更時打 Git tag / release，例如：
 - `v0.1.0`
 - `v0.1.1`
-
-讓前端可以鎖版本、回溯差異。
