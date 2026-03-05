@@ -1,0 +1,238 @@
+/* sys.css
+ * iHeal kiosk MVP design tokens (sys layer)
+ * requires: ref.css loaded first
+ *
+ * naming: lowercase + dash, no spaces
+ */
+
+:root {
+  /* =========================================================
+   * sys / color / bg
+   * ========================================================= */
+
+  /* surface */
+  --sys-color-bg-surface-bright: var(--ref-color-neutral-0);
+  --sys-color-bg-surface-default: var(--ref-color-neutral-10);
+  --sys-color-bg-surface-dim: var(--ref-color-neutral-20);
+
+  /* surface-container */
+  --sys-color-bg-surface-container-lowest: var(--ref-color-metallic-seaweed-5);
+  --sys-color-bg-surface-container-low: var(--ref-color-metallic-seaweed-10);
+  --sys-color-bg-surface-container-default: var(--ref-color-metallic-seaweed-20);
+  --sys-color-bg-surface-container-high: var(--ref-color-metallic-seaweed-30);
+  --sys-color-bg-surface-container-highest: var(--ref-color-metallic-seaweed-40);
+
+  /* primary */
+  --sys-color-bg-primary-default: var(--ref-color-metallic-seaweed-50);
+  --sys-color-bg-primary-hover: var(--ref-color-metallic-seaweed-60);
+  --sys-color-bg-primary-soft-hover: var(--ref-color-metallic-seaweed-20);
+  --sys-color-bg-primary-pressed: var(--ref-color-metallic-seaweed-70);
+  --sys-color-bg-primary-soft-pressed: var(--ref-color-metallic-seaweed-40);
+  --sys-color-bg-primary-focus: var(--ref-color-metallic-seaweed-50);
+  --sys-color-bg-primary-disabled: var(--ref-color-metallic-seaweed-50);
+
+  /* neutral */
+  --sys-color-bg-neutral-default: var(--ref-color-neutral-60);
+  --sys-color-bg-neutral-hover: var(--ref-color-neutral-70);
+  --sys-color-bg-neutral-soft-hover: var(--ref-color-neutral-20);
+  --sys-color-bg-neutral-pressed: var(--ref-color-neutral-80);
+  --sys-color-bg-neutral-soft-pressed: var(--ref-color-neutral-30);
+  --sys-color-bg-neutral-focus: var(--ref-color-neutral-60);
+  --sys-color-bg-neutral-disabled: var(--ref-color-neutral-60);
+
+  /* danger */
+  --sys-color-bg-danger-default: var(--ref-color-red-50);
+  --sys-color-bg-danger-hover: var(--ref-color-red-60);
+  --sys-color-bg-danger-soft-hover: var(--ref-color-red-20);
+  --sys-color-bg-danger-pressed: var(--ref-color-red-70);
+  --sys-color-bg-danger-focus: var(--ref-color-red-50);
+  --sys-color-bg-danger-disabled: var(--ref-color-red-50);
+
+  /* success */
+  --sys-color-bg-success-default: var(--ref-color-green-50);
+  --sys-color-bg-success-hover: var(--ref-color-green-70);
+  --sys-color-bg-success-soft-hover: var(--ref-color-green-20);
+  --sys-color-bg-success-pressed: var(--ref-color-green-80);
+  --sys-color-bg-success-focus: var(--ref-color-green-50);
+  --sys-color-bg-success-disabled: var(--ref-color-green-50);
+
+  /* warning */
+  --sys-color-bg-warning-default: var(--ref-color-yellow-40);
+  --sys-color-bg-warning-hover: var(--ref-color-yellow-50);
+  --sys-color-bg-warning-soft-hover: var(--ref-color-yellow-40);
+  --sys-color-bg-warning-pressed: var(--ref-color-yellow-40);
+  --sys-color-bg-warning-focus: var(--ref-color-yellow-40);
+  --sys-color-bg-warning-disabled: var(--ref-color-yellow-40);
+
+  /* info */
+  --sys-color-bg-info-default: var(--ref-color-blue-40);
+  --sys-color-bg-info-hover: var(--ref-color-blue-60);
+  --sys-color-bg-info-soft-hover: var(--ref-color-blue-20);
+  --sys-color-bg-info-pressed: var(--ref-color-blue-70);
+  --sys-color-bg-info-focus: var(--ref-color-blue-50);
+  --sys-color-bg-info-disabled: var(--ref-color-blue-50);
+
+  /* =========================================================
+   * sys / color / border
+   * ========================================================= */
+
+  /* surface */
+  --sys-color-border-surface-bright: var(--ref-color-neutral-20);
+  --sys-color-border-surface-default: var(--ref-color-neutral-30);
+  --sys-color-border-surface-dim: var(--ref-color-neutral-50);
+
+  /* surface-container */
+  --sys-color-border-surface-container-lowest: var(--ref-color-dark-teal-blue-60);
+  --sys-color-border-surface-container-low: var(--ref-color-dark-teal-blue-50);
+  --sys-color-border-surface-container-default: var(--ref-color-metallic-seaweed-20);
+  --sys-color-border-surface-container-high: var(--ref-color-neutral-20);
+  --sys-color-border-surface-container-highest: var(--ref-color-neutral-20);
+
+  /* primary */
+  --sys-color-border-primary-default: var(--ref-color-metallic-seaweed-50);
+  --sys-color-border-primary-hover: var(--ref-color-metallic-seaweed-60);
+  --sys-color-border-primary-soft-hover: var(--ref-color-tiffany-blue-40);
+  --sys-color-border-primary-pressed: var(--ref-color-metallic-seaweed-70);
+  --sys-color-border-primary-focus: var(--ref-color-metallic-seaweed-50);
+  --sys-color-border-primary-disabled: var(--ref-color-metallic-seaweed-50);
+
+  /* neutral */
+  --sys-color-border-neutral-default: var(--ref-color-neutral-70);
+  --sys-color-border-neutral-hover: var(--ref-color-neutral-80);
+  --sys-color-border-neutral-soft-hover: var(--ref-color-neutral-20);
+  --sys-color-border-neutral-pressed: var(--ref-color-neutral-90);
+  --sys-color-border-neutral-focus: var(--ref-color-neutral-70);
+  --sys-color-border-neutral-disabled: var(--ref-color-neutral-70);
+
+  /* info */
+  --sys-color-border-info-default: var(--ref-color-blue-50);
+  --sys-color-border-info-hover: var(--ref-color-blue-60);
+  --sys-color-border-info-soft-hover: var(--ref-color-blue-20);
+  --sys-color-border-info-pressed: var(--ref-color-blue-70);
+  --sys-color-border-info-focus: var(--ref-color-blue-50);
+  --sys-color-border-info-disabled: var(--ref-color-blue-50);
+
+  /* success */
+  --sys-color-border-success-default: var(--ref-color-green-50);
+  --sys-color-border-success-hover: var(--ref-color-green-70);
+  --sys-color-border-success-soft-hover: var(--ref-color-green-20);
+  --sys-color-border-success-pressed: var(--ref-color-green-80);
+  --sys-color-border-success-focus: var(--ref-color-green-50);
+  --sys-color-border-success-disabled: var(--ref-color-green-50);
+
+  /* danger */
+  --sys-color-border-danger-default: var(--ref-color-red-50);
+  --sys-color-border-danger-hover: var(--ref-color-red-60);
+  --sys-color-border-danger-soft-hover: var(--ref-color-red-20);
+  --sys-color-border-danger-pressed: var(--ref-color-red-60);
+  --sys-color-border-danger-focus: var(--ref-color-red-50);
+  --sys-color-border-danger-disabled: var(--ref-color-red-50);
+
+  /* =========================================================
+   * sys / color / state-layers
+   * ========================================================= */
+  --sys-color-state-layer-faint: var(--ref-color-alpha-5a);
+  --sys-color-state-layer-soft: var(--ref-color-alpha-20a);
+  --sys-color-state-layer-light: var(--ref-color-alpha-40a);
+  --sys-color-state-layer-medium: var(--ref-color-alpha-60a);
+  --sys-color-state-layer-bold: var(--ref-color-alpha-70a);
+  --sys-color-state-layer-heavy: var(--ref-color-alpha-80a);
+
+  /* =========================================================
+   * sys / color / text
+   * ========================================================= */
+
+  /* surface */
+  --sys-color-text-on-surface: var(--ref-color-neutral-0);
+
+  /* neutral */
+  --sys-color-text-neutral: var(--ref-color-neutral-70);
+  --sys-color-text-light-neutral: var(--ref-color-neutral-50);
+  --sys-color-text-on-neutral: var(--ref-color-neutral-0);
+
+  /* primary */
+  --sys-color-text-primary: var(--ref-color-metallic-seaweed-50);
+  --sys-color-text-dark-primary: var(--ref-color-metallic-seaweed-60);
+  --sys-color-text-on-primary: var(--ref-color-neutral-0);
+
+  /* success */
+  --sys-color-text-success: var(--ref-color-green-50);
+  --sys-color-text-on-success: var(--ref-color-neutral-0);
+
+  /* danger */
+  --sys-color-text-danger: var(--ref-color-red-50);
+  --sys-color-text-on-danger: var(--ref-color-neutral-0);
+
+  /* =========================================================
+   * sys / corner
+   * ========================================================= */
+  --sys-corner-xs: var(--ref-size-4);
+  --sys-corner-sm: var(--ref-size-8);
+  --sys-corner-md: var(--ref-size-12);
+  --sys-corner-base: var(--ref-size-16);
+  --sys-corner-lg: var(--ref-size-24);
+  --sys-corner-xl: var(--ref-size-32);
+  --sys-corner-full: var(--ref-size-50pct);
+
+  /* =========================================================
+   * sys / typography
+   * ========================================================= */
+
+  /* font-family (tokens) */
+  --sys-font-family-chinese: "Noto Sans TC";
+  --sys-font-family-english: "Roboto";
+
+  /* font-size */
+  --sys-font-size-label-small: var(--ref-size-20);
+  --sys-font-size-label-large: var(--ref-size-24);
+
+  --sys-font-size-body-xsmall: var(--ref-size-20);
+  --sys-font-size-body-small: var(--ref-size-24);
+  --sys-font-size-body-default: var(--ref-size-28);
+  --sys-font-size-body-medium: var(--ref-size-32);
+  --sys-font-size-body-large: var(--ref-size-48);
+
+  --sys-font-size-subheading: var(--ref-size-40);
+  --sys-font-size-heading: var(--ref-size-56);
+  --sys-font-size-heading-large: var(--ref-size-64);
+
+  --sys-font-size-display: var(--ref-size-80);
+  --sys-font-size-display-large: var(--ref-size-96);
+
+  /* font-weight */
+  --sys-font-weight-regular: 400;
+  --sys-font-weight-medium: 500;
+  --sys-font-weight-bold: 600;
+
+  /* line-height */
+  --sys-line-height-label-small: var(--ref-size-32);
+  --sys-line-height-label-large: 2.25rem; /* 36px */
+
+  --sys-line-height-body-xsmall: var(--ref-size-32);
+  --sys-line-height-body-small: 2.25rem; /* 36px */
+  --sys-line-height-body-default: var(--ref-size-40);
+  --sys-line-height-body-medium: var(--ref-size-48);
+  --sys-line-height-body-large: var(--ref-size-64);
+
+  --sys-line-height-subheading: var(--ref-size-56);
+  --sys-line-height-heading: 4.25rem;       /* 68px */
+  --sys-line-height-heading-large: 4.75rem; /* 76px */
+
+  --sys-line-height-display: 6rem;          /* 96px */
+  --sys-line-height-display-large: 7rem;    /* 112px */
+
+  /* =========================================================
+   * sys / spacing
+   * ========================================================= */
+  --sys-spacing-spacers-0-5rem: var(--ref-size-8);
+  --sys-spacing-spacers-0-75rem: var(--ref-size-12);
+  --sys-spacing-spacers-1rem: var(--ref-size-16);
+  --sys-spacing-spacers-1-5rem: var(--ref-size-24);
+  --sys-spacing-spacers-2rem: var(--ref-size-32);
+  --sys-spacing-spacers-2-5rem: var(--ref-size-40);
+  --sys-spacing-spacers-3rem: var(--ref-size-48);
+  --sys-spacing-spacers-4rem: var(--ref-size-64);
+  --sys-spacing-spacers-5rem: var(--ref-size-80);
+  --sys-spacing-spacers-6rem: var(--ref-size-96);
+  --sys-spacing-spacers-8rem: var(--ref-size-128);
+}

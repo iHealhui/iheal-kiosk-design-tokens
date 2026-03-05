@@ -1,0 +1,171 @@
+/* ref.css
+ * iHeal kiosk MVP design tokens (ref layer)
+ * - size tokens use rem (based on html font-size)
+ * - color tokens use hex
+ *
+ * naming: lowercase + dash, no spaces
+ */
+
+/* lock the rem baseline (1rem = 16px) */
+html { font-size: 16px; }
+
+:root {
+  /* =========================
+   * ref / size (rem)
+   * ========================= */
+  --ref-size-4: 0.25rem;
+  --ref-size-8: 0.5rem;
+  --ref-size-12: 0.75rem;
+  --ref-size-16: 1rem;
+  --ref-size-20: 1.25rem;
+  --ref-size-24: 1.5rem;
+  --ref-size-28: 1.75rem;
+  --ref-size-32: 2rem;
+  --ref-size-40: 2.5rem;
+  --ref-size-48: 3rem;
+  --ref-size-56: 3.5rem;
+  --ref-size-64: 4rem;
+  --ref-size-80: 5rem;
+  --ref-size-96: 6rem;
+  --ref-size-128: 8rem;
+
+  /* figma name: "50%" (use a large value with unit for "pill/full" radius) */
+  --ref-size-50pct: 999rem;
+
+  /* =========================
+   * ref / color / brand-logo
+   * ========================= */
+  --ref-color-brand-logo-primary: #00c3db;
+  --ref-color-brand-logo-secondary: #00e0dc;
+  --ref-color-brand-logo-tertiary: #ff4da4;
+
+  /* =========================
+   * ref / color / metallic-seaweed
+   * ========================= */
+  --ref-color-metallic-seaweed-5: #fbfdfe;
+  --ref-color-metallic-seaweed-10: #f1fcff;
+  --ref-color-metallic-seaweed-20: #e9f8fb;
+  --ref-color-metallic-seaweed-30: #e4f3f6;
+  --ref-color-metallic-seaweed-40: #daeef1;
+  --ref-color-metallic-seaweed-50: #048295;
+  --ref-color-metallic-seaweed-60: #065d6b;
+  --ref-color-metallic-seaweed-70: #04444e;
+  --ref-color-metallic-seaweed-80: #02333b;
+  --ref-color-metallic-seaweed-90: #011e23;
+  --ref-color-metallic-seaweed-100: #011114;
+
+  /* =========================
+   * ref / color / dark-teal-blue
+   * ========================= */
+  --ref-color-dark-teal-blue-10: #edf5f7;
+  --ref-color-dark-teal-blue-20: #d6e5eb;
+  --ref-color-dark-teal-blue-30: #bbd4dd;
+  --ref-color-dark-teal-blue-40: #77a98b;
+  --ref-color-dark-teal-blue-50: #245c71;
+  --ref-color-dark-teal-blue-60: #1b4555;
+  --ref-color-dark-teal-blue-70: #122f39;
+  --ref-color-dark-teal-blue-80: #0f262e;
+  --ref-color-dark-teal-blue-90: #0a1a1f;
+  --ref-color-dark-teal-blue-100: #081217;
+
+  /* =========================
+   * ref / color / tiffany-blue
+   * ========================= */
+  --ref-color-tiffany-blue-10: #eefaf8;
+  --ref-color-tiffany-blue-20: #bae2e2;
+  --ref-color-tiffany-blue-30: #88cdcd;
+  --ref-color-tiffany-blue-40: #53b6b7;
+  --ref-color-tiffany-blue-50: #2a5d65;
+  --ref-color-tiffany-blue-60: #21494f;
+  --ref-color-tiffany-blue-70: #18353a;
+  --ref-color-tiffany-blue-80: #12282b;
+  --ref-color-tiffany-blue-90: #0b1719;
+  --ref-color-tiffany-blue-100: #060d0e;
+
+  /* =========================
+   * ref / color / neutral
+   * ========================= */
+  --ref-color-neutral-0: #ffffff;
+  --ref-color-neutral-10: #f0f2f5;
+  --ref-color-neutral-20: #e6ebef;
+  --ref-color-neutral-30: #c7d1db;
+  --ref-color-neutral-40: #afbdcb;
+  --ref-color-neutral-45: #9cadbf;
+  --ref-color-neutral-50: #8a9eb2;
+  --ref-color-neutral-60: #445769;
+  --ref-color-neutral-70: #303d4a;
+  --ref-color-neutral-80: #222b34;
+  --ref-color-neutral-90: #181f25;
+  --ref-color-neutral-100: #101419;
+
+  /* =========================
+   * ref / color / red
+   * ========================= */
+  --ref-color-red-10: #fff0f4;
+  --ref-color-red-20: #ffd1dd;
+  --ref-color-red-30: #f37d95;
+  --ref-color-red-40: #d64462;
+  --ref-color-red-50: #b81436;
+  --ref-color-red-60: #8a0f28;
+  --ref-color-red-70: #740b21;
+  --ref-color-red-80: #5d091a;
+  --ref-color-red-90: #4a0714;
+  --ref-color-red-100: #380610;
+
+  /* =========================
+   * ref / color / green
+   * ========================= */
+  --ref-color-green-10: #e6fff9;
+  --ref-color-green-20: #bdf0e4;
+  --ref-color-green-30: #95e0cf;
+  --ref-color-green-40: #68c3ae;
+  --ref-color-green-50: #1c8271;
+  --ref-color-green-60: #187263;
+  --ref-color-green-70: #1a6054;
+  --ref-color-green-80: #09493e;
+  --ref-color-green-90: #073c33;
+  --ref-color-green-100: #033029;
+
+  /* =========================
+   * ref / color / blue
+   * ========================= */
+  --ref-color-blue-10: #e9f2ff;
+  --ref-color-blue-20: #d1e4ff;
+  --ref-color-blue-30: #91befd;
+  --ref-color-blue-40: #4481d6;
+  --ref-color-blue-50: #1458b8;
+  --ref-color-blue-60: #0f428a;
+  --ref-color-blue-70: #0b3774;
+  --ref-color-blue-80: #092c5d;
+  --ref-color-blue-90: #07234a;
+  --ref-color-blue-100: #061a38;
+
+  /* =========================
+   * ref / color / yellow
+   * ========================= */
+  --ref-color-yellow-10: #ffff90;
+  --ref-color-yellow-20: #ffe0b2;
+  --ref-color-yellow-30: #ffcb80;
+  --ref-color-yellow-40: #ffb74d;
+  --ref-color-yellow-50: #ffab00;
+  --ref-color-yellow-60: #f5a300;
+  --ref-color-yellow-70: #cc8f00;
+  --ref-color-yellow-80: #c48a02;
+  --ref-color-yellow-90: #966b00;
+  --ref-color-yellow-100: #3d2900;
+
+  /* =========================
+   * ref / color / alpha (as #rrggbbaa)
+   * base: #ffffff @ 10%, #101419 @ 5~80%
+   * ========================= */
+  --ref-color-alpha-0: #ffffff1a;   /* 10% */
+  --ref-color-alpha-5a: #1014190d;  /* 5% */
+  --ref-color-alpha-10a: #1014191a; /* 10% */
+  --ref-color-alpha-20a: #10141933; /* 20% */
+  --ref-color-alpha-30a: #1014194d; /* 30% */
+  --ref-color-alpha-40a: #10141966; /* 40% */
+  --ref-color-alpha-50a: #10141980; /* 50% */
+  --ref-color-alpha-60a: #10141999; /* 60% */
+  --ref-color-alpha-70a: #101419b3; /* 70% */
+  --ref-color-alpha-80a: #101419cc; /* 80% */
+}

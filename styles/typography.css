@@ -1,0 +1,137 @@
+/* typography.css
+ * iHeal kiosk MVP typography styles (Figma-like text styles)
+ * depends on: sys.css
+ *
+ * naming: lowercase + dash
+ */
+
+:root {
+  --typo-font-family: var(--sys-font-family-chinese), var(--sys-font-family-english), system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* =========================
+ * label
+ * ========================= */
+.label-small {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-label-small);
+  line-height: var(--sys-line-height-label-small);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+.label-large {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-label-large);
+  line-height: var(--sys-line-height-label-large);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+.label-small-strong {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-label-small);
+  line-height: var(--sys-line-height-label-small);
+  font-weight: var(--sys-font-weight-bold);
+}
+
+.label-large-strong {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-label-large);
+  line-height: var(--sys-line-height-label-large);
+  font-weight: var(--sys-font-weight-bold);
+}
+
+/* =========================
+ * body
+ * ========================= */
+.body-xsmall {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-body-xsmall);
+  line-height: var(--sys-line-height-body-xsmall);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+.body-small {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-body-small);
+  line-height: var(--sys-line-height-body-small);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+/* figma: body-base 28/40 */
+.body-base {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-body-default);
+  line-height: var(--sys-line-height-body-default);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+.body-medium {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-body-medium);
+  line-height: var(--sys-line-height-body-medium);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+.body-large {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-body-large);
+  line-height: var(--sys-line-height-body-large);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+.body-large-strong {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-body-large);
+  line-height: var(--sys-line-height-body-large);
+  font-weight: var(--sys-font-weight-bold);
+}
+
+/* =========================
+ * headings
+ * ========================= */
+.subheading {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-subheading);
+  line-height: var(--sys-line-height-subheading);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+/* figma: heading 56/68 */
+.heading {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-heading);
+  line-height: var(--sys-line-height-heading);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+.heading-strong {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-heading);
+  line-height: var(--sys-line-height-heading);
+  font-weight: var(--sys-font-weight-bold);
+}
+
+/* figma: heading-large 64/76 */
+.heading-large {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-heading-large);
+  line-height: var(--sys-line-height-heading-large);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+/* =========================
+ * display
+ * ========================= */
+.display {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-display);
+  line-height: var(--sys-line-height-display);
+  font-weight: var(--sys-font-weight-regular);
+}
+
+.display-large {
+  font-family: var(--typo-font-family);
+  font-size: var(--sys-font-size-display-large);
+  line-height: var(--sys-line-height-display-large);
+  font-weight: var(--sys-font-weight-regular);
+}
